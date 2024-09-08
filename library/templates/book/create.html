@@ -1,0 +1,26 @@
+{% extends './base.html' %}
+
+{% block title %}
+create Book
+{% endblock %}
+
+{% block content %}
+<h1>create Book</h1>
+
+<form method="post">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input type="text" name="name" class="form-control" >
+    </div>
+   <div class="mb-3">
+      <label class="form-label">Description</label>
+      <input type="text" name="description" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Image</label>
+      <input type="texy" name="image" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+{% endblock %}
